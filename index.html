@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/Styles/main.css">
+</head>
+
+<body>
+    <section>
+        <h1>Einkommenssteuerrechner (vereinfacht)</h1>
+        <!-- <div>
+            <p>Jahr:</p>
+            <select:>
+                <option value=""></option>
+            </select:>
+        </div> -->
+        <div>
+            <div class="pDiv">
+                <p>zu versteuerndes Jahreseinkommen:</p>
+                <p>(Bei Zusammenveranlagung beide Einkommen zusammenrechnen)</p>
+            </div>
+            <form id="input">
+                <input type="number" name="yearlyIncome" id="yearlyIncome">
+                <label for="yearlyIncome"> Euro</label>
+            </form>
+        </div>
+        <div>
+            <p>Art der Veranlagung:</p>
+            <form action="#" id="assesF">
+                <input type="radio" name="assesVal" id="assesSingle">
+                <label for="assesSingle"> Einzelveranlagung</label>
+                <input type="radio" name="assesVal" id="assesCouple">
+                <label for="assesCouple">Zusammenveranlagung</label>
+            </form>
+        </div>
+        <input type="submit" id="submit" value="Berechnen" onclick="taxCalc()">
+
+    </section>
+    <div id="outputTax">
+        <p>Test</p>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
